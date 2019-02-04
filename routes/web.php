@@ -1,5 +1,5 @@
 <?php
-
+// use Illuminate\View\View;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,10 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('8');
+Route::get('/1', function () {
+    return View::make('1');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/6/2', function () {
+    return View::make('6.2');
+});
+
+Route::get('/7/1', function () {
+    return View::make('7.1');
+});
+
+Route::get('/7/2', function () {
+    return View::make('7.2');
+});
+
+Route::get('/7/3', function () {
+    return View::make('7.3');
+});
+
+Route::get('/8/1', function () {
+    return View::make('8.1');
+});
